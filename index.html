@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Samuel Rowe – Full-Stack Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="webstyle.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">Samuel Rowe</a>
+  <nav aria-label="Main"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  <div class="tools"><button class="icon" id="theme" aria-label="Toggle dark mode">☾</button><a class="btn" href="#contact">Contact</a></div>
+</div></header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <div>
+      <div class="mono">HELLO, I'M</div>
+      <h1>Samuel <em>Rowe</em></h1>
+      <p class="lead">Full-stack engineer and Data Analyst <strong>Computer Science student at the University of Maryland</strong>. I build complete web apps, from the database to the browser, and love working on things that can improve people's lives.</p>
+      <div class="cta"><a class="btn solid" href="#contact">Get in touch</a><a class="btn soft" href="#work">See my work</a></div>
+    </div>
+    <aside class="card" aria-label="At a glance">
+      <div class="avatar" aria-hidden="true">SR</div>
+      <dl>
+        <div class="r"><dt>School</dt><dd>University of Maryland</dd></div>
+        <div class="r"><dt>Degree</dt><dd>B.S. Computer Science</dd></div>
+        <div class="r"><dt>Graduating</dt><dd>2027</dd></div>
+        <div class="r"><dt>Location</dt><dd>Bowie, MD</dd></div>
+      </dl>
+      <a class="dl" href="My_Full-Stack_Resume.pdf" download><span>Download résumé</span><span aria-hidden="true">↓</span></a>
+    </aside>
+  </div>
+
+  <section id="about">
+    <div class="mono" style="margin-bottom:20px">ABOUT</div>
+    <p class="about">I'm a junior at the University of Maryland with a solid grounding in <strong>REST API design, database management and responsive front-end development</strong>. I've shipped web apps that people can use today, and I enjoy applying machine learning to real data, like student reviews and survey results.</p>
+  </section>
+
+  <section id="work">
+    <div class="head">
+      <div class="mono">WORK</div>
+      <div class="tabs" role="tablist">
+        <button role="tab" aria-selected="true" aria-controls="p-exp" id="t-exp">Experience</button>
+        <button role="tab" aria-selected="false" aria-controls="p-proj" id="t-proj">Projects</button>
+        <button role="tab" aria-selected="false" aria-controls="p-cert" id="t-cert">Certifications</button>
+      </div>
+    </div>
+
+    <div class="panel" id="p-exp" role="tabpanel" aria-labelledby="t-exp">
+      <details open><summary><div><h3 class="t">Website and Tech Intern</h3><p class="s">Pregnancy Aid Centers, Inc.</p></div><span class="when">Jun 2026 – Aug 2026</span></summary>
+        <div><ul><li>Updated and improved the clinic website, improving how content is organized and the overall quality of the site.</li><li>Gave basic tech support, troubleshooting computers, printers and peripherals.</li><li>Helped with small technology and creative projects that supported clinic operations.</li></ul></div></details>
+      <details><summary><div><h3 class="t">Front Desk Receptionist</h3><p class="s">College Success Scholars Program, University of Maryland</p></div><span class="when">Sep 2023 – May 2025</span></summary>
+        <div><ul><li>Handled the program's incoming calls and emails promptly and professionally.</li><li>Kept the front desk welcoming and organized for members and visitors.</li><li>Tracked daily room attendance in spreadsheets to monitor the weekly required-hours policy.</li></ul></div></details>
+    </div>
+
+    <div class="panel" id="p-proj" role="tabpanel" aria-labelledby="t-proj" hidden>
+      <details open><summary><div><h3 class="t">Budget Manager</h3><p class="s">Full-stack web app</p></div><span class="when">Node · Express · MongoDB</span></summary>
+        <div><p class="tags">Node.js, Express.js, MongoDB, EJS, JavaScript, CSS</p><ul><li>Built a full-stack app with MongoDB storage and user account management.</li><li>Added expense tracking: add and delete transactions, clear records, register users.</li><li>Designed a multi-page UI with dynamic budget updates and real-time feedback when a budget limit is exceeded.</li></ul><a class="btn" href="https://newbudgetmanager.onrender.com/" target="_blank" rel="noopener">Open live site ↗</a></div></details>
+      <details><summary><div><h3 class="t">Terp Review Explorer</h3><p class="s">Professor and course ratings</p></div><span class="when">Node · Express · SQL</span></summary>
+        <div><p class="tags">Node.js, Express.js, EJS, SQL, JavaScript, CSS</p><ul><li>Built a full-stack app that shows professor and course ratings using the PlanetTerp API.</li><li>Implemented autocomplete search and dynamic server-rendered result pages.</li><li>Wrote SQL queries with AlaSQL to aggregate and analyze review data.</li></ul><a class="btn" href="https://terpproject.onrender.com/" target="_blank" rel="noopener">Open live site ↗</a></div></details>
+      <details><summary><div><h3 class="t">Professor Review Rating Prediction</h3><p class="s">Natural language processing</p></div><span class="when">Python · PyTorch</span></summary>
+        <div><p class="tags">Python, Pandas, PyTorch</p><ul><li>Built an NLP system that predicts star ratings from professor reviews with transformer models.</li><li>Processed 2,000+ student reviews sourced through the PlanetTerp API.</li><li>Fine-tuned a pretrained transformer on review text, reaching about 75% accuracy.</li></ul></div></details>
+      <details><summary><div><h3 class="t">Student Performance Prediction</h3><p class="s">Machine learning</p></div><span class="when">Python · SQL · Pandas</span></summary>
+        <div><p class="tags">Python, SQL, Pandas</p><ul><li>Built KNN, Decision Tree and Naive Bayes classifiers to predict exam pass/fail from survey data.</li><li>Extended the system with multi-class classifiers that predict letter grades, A through F.</li><li>Applied regression models to predict numerical grades, evaluated with R-squared and RMSE.</li></ul></div></details>
+    </div>
+
+    <div class="panel" id="p-cert" role="tabpanel" aria-labelledby="t-cert" hidden>
+      <details open><summary><div><h3 class="t">IBM SkillsBuild Data Analytics Certificate</h3><p class="s">IBM</p></div><span class="when">Issued Jul 2026</span></summary><div><p>Credential in data analytics from IBM SkillsBuild.</p></div></details>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="mono" style="margin-bottom:36px">SKILLS</div>
+    <div class="skills">
+      <div class="card"><h3>Web development</h3><p>JavaScript, Node.js, Express.js, React, REST APIs, HTML, CSS, EJS, Fetch API, PHP</p></div>
+      <div class="card"><h3>Databases</h3><p>MongoDB, SQL, AlaSQL</p></div>
+      <div class="card"><h3>Languages</h3><p>Python, Java, C, OCaml, Rust</p></div>
+      <div class="card"><h3>Data and ML</h3><p>Pandas, PyTorch, NumPy</p></div>
+      <div class="card"><h3>Tools</h3><p>Microsoft Excel</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="mono" style="margin-bottom:20px">CONTACT</div>
+    <p class="big">Let's build something together.</p>
+    <div class="cta"><a class="btn solid" href="mailto:sammike9478@gmail.com">sammike9478@gmail.com</a><a class="btn soft" href="tel:+12022767140">(202) 276-7140</a></div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Samuel Rowe · Bowie, MD</div></footer>
+
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.tabs button');
+  tabs.forEach(function(b){b.addEventListener('click',function(){
+    tabs.forEach(function(t){
+      var on=t===b;t.setAttribute('aria-selected',on);
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+  });});
+  var btn=document.getElementById('theme'),root=document.documentElement;
+  function isDark(){var a=root.getAttribute('data-theme');return a?a==='dark':matchMedia('(prefers-color-scheme: dark)').matches}
+  function paint(){btn.textContent=isDark()?'☀':'☾'}
+  btn.addEventListener('click',function(){root.setAttribute('data-theme',isDark()?'light':'dark');paint()});
+  paint();
+})();
+</script>
+</body>
+</html>
